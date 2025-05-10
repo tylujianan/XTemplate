@@ -2,4 +2,67 @@
 
 "DOTAAbilities"
 {
+    "tinker_heat_seeking_missile"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE | DOTA_UNIT_TARGET_FLAG_NO_INVIS | DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_Tinker.Heat-Seeking_Missile"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0 0 0 0"
+		"AbilityCastRange"				"1500"
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"18"
+
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"105 115 125 135"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{ 
+				"damage"			"120 200 280 360"
+				"radius"			
+				{
+					"value"	"1500"
+					"affected_by_aoe_increase"	"1"
+				}
+				"targets"			
+				{
+					"value"	"2 2 2 2"
+				}
+				"speed"				"700"
+				"radius_explosion"				"0"
+				"splash_pct"		"0"
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
+	}
+    "tinker_rearm"
+    {
+        "AbilityValues"
+		{
+			"magic_resistance"
+			{
+				"value"	"0"
+			}
+			"armor_duration"
+			{
+				"value"	"0"
+			}
+			"affects_items"
+			{
+				"value"	"1"
+			}
+		}
+    }
 }

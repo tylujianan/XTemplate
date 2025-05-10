@@ -10,10 +10,10 @@ export class GameConfig {
         GameRules.SetPreGameTime(0); // 进入游戏后号角吹响前的准备时间
         GameRules.SetPostGameTime(30); // 游戏结束后时长
         GameRules.SetSameHeroSelectionEnabled(true); // 是否允许选择相同英雄
-        GameRules.SetStartingGold(0); // 设置初始金钱
+        GameRules.SetStartingGold(99999); // 设置初始金钱
         GameRules.SetGoldTickTime(0); // 设置工资发放间隔
         GameRules.SetGoldPerTick(0); // 设置工资发放数额
-        GameRules.SetHeroRespawnEnabled(false); // 是否允许英雄重生
+        GameRules.SetHeroRespawnEnabled(true); // 是否允许英雄重生
         GameRules.SetCustomGameAllowMusicAtGameStart(false); // 是否允许游戏开始时的音乐
         GameRules.SetCustomGameAllowHeroPickMusic(false); // 是否允许英雄选择阶段的音乐
         GameRules.SetCustomGameAllowBattleMusic(false); // 是否允许战斗阶段音乐
@@ -24,11 +24,11 @@ export class GameConfig {
         game.SetRemoveIllusionsOnDeath(true); // 是否在英雄死亡的时候移除幻象
         game.SetSelectionGoldPenaltyEnabled(false); // 是否启用选择英雄时的金钱惩罚（超时每秒扣钱）
         game.SetLoseGoldOnDeath(false); // 是否在英雄死亡时扣除金钱
-        game.SetBuybackEnabled(false); // 是否允许买活
+        game.SetBuybackEnabled(true); // 是否允许买活
         game.SetDaynightCycleDisabled(true); // 是否禁用白天黑夜循环
         game.SetForceRightClickAttackDisabled(true); // 是否禁用右键攻击
         game.SetHudCombatEventsDisabled(true); // 是否禁用战斗事件（左下角的战斗消息）
-        // game.SetCustomGameForceHero(`npc_dota_hero_tinker`); // 设置强制英雄（会直接跳过英雄选择阶段并直接为所有玩家选择这个英雄）
+        game.SetCustomGameForceHero(`npc_dota_hero_tinker`); // 设置强制英雄（会直接跳过英雄选择阶段并直接为所有玩家选择这个英雄）
         // game.SetUseCustomHeroLevels(true); // 是否启用自定义英雄等级
         // game.SetCustomHeroMaxLevel(1); // 设置自定义英雄最大等级
         // game.SetCustomXPRequiredToReachNextLevel({
