@@ -17,8 +17,8 @@ function HeroList() {
     const [text, setText] = useState('');
     const [showDetails, setShowDetails] = useState(false);
     return (
-        <Panel>
-            <Panel>
+        <Panel className='container'>
+            <Panel className='test-block'>
                 <HeroRow heroName="npc_dota_hero_antimage" />
                 <HeroRow heroName="npc_dota_hero_axe" />
                 <HeroRow heroName="npc_dota_hero_beastmaster" />
