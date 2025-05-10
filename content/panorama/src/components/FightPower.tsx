@@ -20,7 +20,6 @@ const FightPower = () => {
 
     useEffect(() => {
         if (heroIndex === -1) return; // 未就绪则跳过
-
         $.Schedule(Game.GetGameFrameTime(), () => {
             const [x, y, z] = Entities.GetAbsOrigin(heroIndex);
             const screenX = Game.WorldToScreenX(x, y, z);

@@ -33,11 +33,19 @@ function HeroList() {
 
                 {showDetails && <Label text="Details!" />}
             </Panel>
-            {/* <KDA /> */}
-            <FightPower />
+            <KDA />
         </Panel>
     );
 }
 
+const Body = () => {
+    return (
+        <Panel style={{ height: '100%' }}>
+            <HeroList />
+            <FightPower />
+        </Panel>
+    )
+}
 
-render(<HeroList />, $.GetContextPanel());
+
+render(<Body />, $.GetContextPanel());
