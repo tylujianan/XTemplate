@@ -28,7 +28,7 @@ export class GameConfig {
         game.SetDaynightCycleDisabled(true); // 是否禁用白天黑夜循环
         game.SetForceRightClickAttackDisabled(true); // 是否禁用右键攻击
         game.SetHudCombatEventsDisabled(true); // 是否禁用战斗事件（左下角的战斗消息）
-        game.SetCustomGameForceHero(`npc_dota_hero_tinker`); // 设置强制英雄（会直接跳过英雄选择阶段并直接为所有玩家选择这个英雄）
+        // game.SetCustomGameForceHero(`npc_dota_hero_tinker`); // 设置强制英雄（会直接跳过英雄选择阶段并直接为所有玩家选择这个英雄）
         // game.SetUseCustomHeroLevels(true); // 是否启用自定义英雄等级
         // game.SetCustomHeroMaxLevel(1); // 设置自定义英雄最大等级
         // game.SetCustomXPRequiredToReachNextLevel({
@@ -37,7 +37,8 @@ export class GameConfig {
         // });
         game.SetDaynightCycleDisabled(true); // 是否禁用白天黑夜循环
         game.SetDeathOverlayDisabled(true); // 是否禁用死亡遮罩（灰色的遮罩）
-
+        
+        game.SetFreeCourierModeEnabled(true); // 是否启用自由快递模式（在基地也可以购买快递）* 这个不是设置在任何地方都可以购买，如果要设置这个，需要将购买区域覆盖全地图
         // 设置自定义的队伍人数上限
         GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.GOODGUYS, 3);
         GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.BADGUYS, 3);
